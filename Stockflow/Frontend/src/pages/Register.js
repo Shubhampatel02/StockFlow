@@ -40,26 +40,26 @@ function Register() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
+    <div className="flex items-center justify-center h-screen bg-gradient-to-r from-blue-600 to-blue-200">
+      <div className="w-full max-w-sm bg-white bg-opacity-80 p-6 rounded-lg shadow-lg border border-gray-200">
         <div className="mb-6 text-center">
           <img
             className="mx-auto h-12 w-auto"
             src={require("../assets/logo.png")}
             alt="Your Company"
           />
-          <h2 className="mt-6 text-3xl font-bold text-gray-900">
+          <h2 className="mt-4 text-2xl font-bold text-gray-900">
             Register your account
           </h2>
         </div>
-        <form className="space-y-6" onSubmit={handleSubmit}>
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="flex flex-col gap-4">
             <div className="flex gap-4">
               <input
                 name="firstName"
                 type="text"
                 required
-                className="relative block w-full rounded-t-md border-0 py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="relative block w-full rounded-md border-gray-300 py-2 px-3 text-gray-900 placeholder-gray-500 ring-1 ring-gray-300 focus:ring-2 focus:ring-indigo-500 sm:text-sm"
                 placeholder="First Name"
                 value={form.firstName}
                 onChange={handleInputChange}
@@ -68,7 +68,7 @@ function Register() {
                 name="lastName"
                 type="text"
                 required
-                className="relative block w-full rounded-t-md border-0 py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="relative block w-full rounded-md border-gray-300 py-2 px-3 text-gray-900 placeholder-gray-500 ring-1 ring-gray-300 focus:ring-2 focus:ring-indigo-500 sm:text-sm"
                 placeholder="Last Name"
                 value={form.lastName}
                 onChange={handleInputChange}
@@ -80,7 +80,7 @@ function Register() {
               type="email"
               autoComplete="email"
               required
-              className="relative block w-full rounded-t-md border-0 py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="relative block w-full rounded-md border-gray-300 py-2 px-3 text-gray-900 placeholder-gray-500 ring-1 ring-gray-300 focus:ring-2 focus:ring-indigo-500 sm:text-sm"
               placeholder="Email address"
               value={form.email}
               onChange={handleInputChange}
@@ -91,17 +91,17 @@ function Register() {
               type="password"
               autoComplete="current-password"
               required
-              className="relative block w-full rounded-b-md border-0 py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="relative block w-full rounded-md border-gray-300 py-2 px-3 text-gray-900 placeholder-gray-500 ring-1 ring-gray-300 focus:ring-2 focus:ring-indigo-500 sm:text-sm"
               placeholder="Password"
               value={form.password}
               onChange={handleInputChange}
             />
             <input
               name="phoneNumber"
-              type="number"
-              autoComplete="phoneNumber"
+              type="tel"
+              autoComplete="tel"
               required
-              className="relative block w-full rounded-b-md border-0 py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="relative block w-full rounded-md border-gray-300 py-2 px-3 text-gray-900 placeholder-gray-500 ring-1 ring-gray-300 focus:ring-2 focus:ring-indigo-500 sm:text-sm"
               placeholder="Phone Number"
               value={form.phoneNumber}
               onChange={handleInputChange}
@@ -120,27 +120,29 @@ function Register() {
               />
               <label
                 htmlFor="agree-terms"
-                className="ml-2 block text-sm text-gray-900"
+                className="ml-2 text-sm text-gray-700"
               >
                 I Agree to Terms & Conditions
               </label>
             </div>
-
             <div className="text-sm">
-              <span className="font-medium text-indigo-600 hover:text-indigo-500">
+              <Link
+                to="/forgot-password"
+                className="font-medium text-indigo-600 hover:text-indigo-500"
+              >
                 Forgot your password?
-              </span>
+              </Link>
             </div>
           </div>
 
           <div>
             <button
               type="submit"
-              className="group relative flex w-full justify-center rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="group relative flex w-full justify-center rounded-md bg-indigo-600 py-2 px-4 text-sm font-semibold text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Sign up
             </button>
-            <p className="mt-2 text-center text-sm text-gray-600">
+            <p className="mt-4 text-center text-sm text-gray-600">
               Or{" "}
               <span className="font-medium text-indigo-600 hover:text-indigo-500">
                 Already have an account?{" "}

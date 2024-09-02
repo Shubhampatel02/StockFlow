@@ -116,16 +116,16 @@ function Inventory() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col p-6 w-full md:w-3/12 bg-red-40 shadow-lg rounded">
+            <div className="flex flex-col p-6 w-full md:w-3/12 bg-red-500 shadow-lg rounded">
               <span className="font-semibold text-red-800 text-base">Low Stocks</span>
               <div className="flex gap-8">
                 <div className="flex flex-col">
-                  <span className="font-semibold text-gray-700 text-base">12</span>
-                  <span className="font-thin text-gray-500 text-xs">Ordered</span>
+                  <span className="font-semibold text-black-700 text-base">12</span>
+                  <span className="font-thin text-black-500 text-xs">Ordered</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-semibold text-gray-700 text-base">2</span>
-                  <span className="font-thin text-gray-500 text-xs">Not in Stock</span>
+                  <span className="font-semibold text-black-700 text-base">2</span>
+                  <span className="font-thin text-black-500 text-xs">Not in Stock</span>
                 </div>
               </div>
             </div>
