@@ -1,9 +1,4 @@
-Here's the full README.md in a single copy-paste-friendly format:
-
-markdown
-Copy code
-# 🏪 Stock Management Platform
-
+# 🏪 StockFlow
 A comprehensive Stock Management Platform designed to automate the tracking and control of inventory for retail businesses, ensuring efficient and accurate management of stock levels.
 
 ## ✨ Features
@@ -43,9 +38,11 @@ Frontend:
 cd frontend
 npm install
 
+
 Backend:
 cd backend
 npm install
+
 
 
 
